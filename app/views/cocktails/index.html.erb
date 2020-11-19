@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+  <div class="col-sm-8 col-sm-offset-2">
+    <h1>all ours cocktails (<%= @cocktails.count %>)</h1>
+
+      <ul>
+    <div class="card br-2">
+      <% @cocktails.each do |cocktail|%>
+        <li class="title"><%= cocktail.name %></li>
+        <%= link_to "More info", cocktail_path(cocktail) %>
+        <% end %>
+      </ul>
+    </div>
+    </div>
+  </div>
+</div>
