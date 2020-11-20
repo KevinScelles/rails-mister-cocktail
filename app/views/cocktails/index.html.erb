@@ -2,6 +2,7 @@
   <div class="row">
   <div class="col-sm-8 col-sm-offset-2">
     <h1>all ours cocktails (<%= @cocktails.count %>)</h1>
+        <%= link_to "Add a cocktail", new_cocktail_path, class: "btn btn-primary btn-lg" %>
 
       <ul>
     <div class="card br-2">
